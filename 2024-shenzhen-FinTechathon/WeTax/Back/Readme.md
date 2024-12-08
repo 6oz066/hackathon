@@ -29,7 +29,7 @@ Webase Front:v3.1.1
 
 Webase Signature:v3.1.1
 
-具体部署说明请参考：https://webasedoc.readthedocs.io/zh-cn/latest/docs/WeBASE/install.html
+具体部署说明请参考：[Webase部署说明] (https://webasedoc.readthedocs.io/zh-cn/latest/docs/WeBASE/install.html)
 
 ## 四、Web3工具部署调用合约相关说明
 # 1、开启Web3相关配置
