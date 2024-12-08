@@ -56,6 +56,11 @@ WeBASE-Collect-Bee 监控到快速大额交易，触发异常预警。随即税
 量的成本会增加，刷量的行为一定程度上得到遏制， 无机交易的减
 少净化了电商直播环境。
 
+## 4、项目架构图
+![监管流架构图](https://github.com/6oz066/hackathon/blob/master/2024-shenzhen-FinTechathon/WeTax/%E7%9B%91%E7%AE%A1%E6%B5%81%E6%9E%B6%E6%9E%84.png)
+
+![地址簿备案架构图](https://github.com/6oz066/hackathon/blob/master/2024-shenzhen-FinTechathon/WeTax/%E5%9C%B0%E5%9D%80%E7%B0%BF%E5%A4%87%E6%A1%88%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+
 # 三、项目构造
 ## 数据处理单元
 - i.	采集：从各直播电商平台实时采集用户的打赏、购买等行为数据。
