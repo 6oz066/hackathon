@@ -54,4 +54,12 @@ setSystemConfigByKey feature_balance_precompiled 1
 ```
 addBalance 钱包地址 充值数量 充值单位
 ```
-# 2、使用MetaMask向FISCO BCOS发送请求
+### 2、使用MetaMask向FISCO BCOS发送请求
+在Remix部署和调用交易界面中配置环境信息。在环境中选择 Injected Provider - MetaMask 。在发起部署/调用合约时，Remix将会把合约内容发送到MetaMask，页面将会跳转到MetaMask进行确认签名。
+
+### 3、使用hardhat向FISCO BCOS部署合约
+[hardhat的demo仓库] (https://github.com/kyonRay/bcos-hardhat-tutorial)
+
+项目结构如下，contracts存放solidity合约，ignition存放最终部署上链的工具，test存放所有的合约测试代码。hardhat.config.js就是hardhat的基础配置文件。在hardhat.config.js的配置文件中配置好实际的IP端口、chainID，并向测试的地址发送足够的balance。由于FISCO BCOS与Web3在地址计算中存在区别，Hardhat在部署好合约后将在本地根据合约的nonce以及发送者地址计算得出新的合约地址，这与FISCO BCOS不兼容。因此在部署完成合约之后，还需要手动设置合约地址。
+
+具体可参考：[3. 使用Hardhat工具向FISCO BCOS发送交易](https://fisco-bcos-doc.readthedocs.io/zh-cn/latest/docs/develop/web3_usage.html)
