@@ -35,7 +35,7 @@ Webase Signature:v3.1.1
 # 1、开启Web3相关配置
 在节点目录下，找到配置项config.ini，修改相关配置如下：
 
-"""
+```
 
 [web3_rpc]
     enable=false
@@ -43,17 +43,17 @@ Webase Signature:v3.1.1
     listen_port=8545
     thread_count=16
     
-"""
+```
 
 在FISCO BCOS节点控制台下，输入以下指令，开启Balance功能及其预编译功能
 
-'''
+```
 
 开启总体功能
 setSystemConfigByKey feature_balance 1
 开启Balance预编译功能
 setSystemConfigByKey feature_balance_precompiled 1
 
-'''
+```
 
 # 2、使用MetaMask向FISCO BCOS发送请求
